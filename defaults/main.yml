@@ -1,0 +1,12 @@
+---
+proxy_env: {}
+bashrc_powerline_go_version: 1.17.0
+bashrc_profiled_scripts:
+  - powerline-prompt.sh
+  - ssh-agent.sh
+bashrc_root_dot_files:
+  - ms.sh
+  - tmux.conf
+  - vimrc
+bashrc_profiled_scripts_extra: []
+bashrc_root_dot_files_extra: []

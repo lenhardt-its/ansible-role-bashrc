@@ -1,0 +1,38 @@
+---
+- name: download powerline-go
+  get_url:
+    url: "https://github.com/justjanne/powerline-go/releases/download/v{{ bashrc_powerline_go_version }}/powerline-go-linux-amd64"
+    dest: "/usr/local/bin/powerline-go"
+    mode: '0755'
+    owner: root
+    group: root
+  environment: "{{ proxy_env }}"
+  retries: 5
+  delay: 2
+  check_mode: false
+  become: true
+  tags: bashrc
+
+- name: copy script for /etc/profile.d
+  copy:
+    src: "{{ role_path }}/files/{{ item }}"
+    dest: "/etc/profile.d/{{ item }}"
+    owner: root
+    group: root
+  with_items:
+    - "{{ bashrc_profiled_scripts }}"
+    - "{{ bashrc_profiled_scripts_extra }}"
+  become: true
+  tags: bashrc
+
+- name: copy script for /etc/profile.d
+  copy:
+    src: "{{ role_path }}/files/{{ item }}"
+    dest: "/root/.{{ item }}"
+    owner: root
+    group: root
+  with_items:
+    - "{{ bashrc_root_dot_files }}"
+    - "{{ bashrc_root_dot_files_extra }}"
+  become: true
+  tags: bashrc
