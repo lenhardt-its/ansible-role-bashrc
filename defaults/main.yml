@@ -1,6 +1,6 @@
 ---
 proxy_env: {}
-bashrc_powerline_go_version: 1.17.0
+bashrc_powerline_go_version: 1.20.0
 bashrc_profiled_scripts:
   - powerline-prompt.sh
   - ssh-agent.sh
