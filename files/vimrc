@@ -17,4 +17,6 @@ set t_Co=256
 filetype on
 filetype plugin on
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType yml setlocal shiftwidth=2 tabstop=2
+autocmd FileType json setlocal shiftwidth=2 tabstop=2
 syntax on
