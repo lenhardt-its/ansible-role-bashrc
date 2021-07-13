@@ -20,7 +20,7 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
 | `proxy_env` | {} | Set proxy environment. |
-| `bashrc_powerline_go_version` | 1.20.0 | Set powerline-go version [Powerline-Go](https://github.com/justjanne/powerline-go) |
+| `bashrc_powerline_go_version` | 1.21.0 | Set powerline-go version [Powerline-Go](https://github.com/justjanne/powerline-go) |
 | `bashrc_profiled_scripts` | [ powerline-prompt.sh, ssh-agent.sh ] | Set /etc/profile.d/<file> scripts from files folder. |
 | `bashrc_root_dot_files` | [ ms.sh, tmux.conf ,vimrc ] | Set root .dot file from files folder |
 | `bashrc_profiled_scripts_extra` | [] | Set extra /etc/profile.d/<file> scripts from files folder. |

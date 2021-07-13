@@ -5,10 +5,9 @@ galaxy_info:
   license: license (Apache)
   min_ansible_version: 2.5
   platforms:
-  - name: EL
+  - name: Ubuntu
     versions:
-    - 7
-    - 8
+    - focal
   categories:
   - system
 dependencies: []

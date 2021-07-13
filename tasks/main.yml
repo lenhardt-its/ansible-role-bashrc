@@ -25,7 +25,7 @@
   become: true
   tags: bashrc
 
-- name: copy script for /etc/profile.d
+- name: copy script for /root
   copy:
     src: "{{ role_path }}/files/{{ item }}"
     dest: "/root/.{{ item }}"
